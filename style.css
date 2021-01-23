@@ -12,4 +12,70 @@ html {
 body {
   font-size: 62.5%;
   font-family: 'Open Sans Condensed', sans-serif;
+  background-color: rgb(26, 26, 26);
+}
+.container {
+  display: grid;
+  grid-template-columns:
+    10rem minmax(20rem, 1fr) minmax(2rem, 7rem) minmax(20rem, 1fr)
+    10rem;
+  grid-template-rows: 10rem 1fr 1fr 10rem;
+  height: 100vh;
+}
+
+.aboutMe {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.aboutMe__heading {
+  font-size: 3rem;
+  color: azure;
+}
+.aboutMe__paragraph {
+  font-size: 1.6rem;
+  color: azure;
+}
+.navigation {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.navigationList {
+  list-style: none;
+}
+.navigationItem {
+  color: azure;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.navigationItem:hover {
+}
+
+.navigationItem::after {
+  content: '';
+  width: 0%;
+  display: block;
+  height: 1px;
+  background-color: azure;
+  transition: 0.4s all ease;
+}
+
+.navigationItem:hover::after {
+  width: 100%;
+}
+
+.containerInfo {
+  grid-row: 2/4;
+  grid-column: 4/5;
+  background-color: aqua;
 }
