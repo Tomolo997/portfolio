@@ -34,12 +34,17 @@ body {
 }
 
 .aboutMe__heading {
-  font-size: 3rem;
+  font-size: 5rem;
   color: azure;
 }
 .aboutMe__paragraph {
   font-size: 1.6rem;
   color: azure;
+  position: relative;
+  left: -1rem;
+}
+.hi__span {
+  font-size: 7rem;
 }
 .navigation {
   grid-row: 3/4;
@@ -52,6 +57,10 @@ body {
 .navigationList {
   list-style: none;
 }
+.frontEnd {
+  position: relative;
+  left: 0.7rem;
+}
 .navigationItem {
   color: azure;
   font-size: 2rem;
@@ -60,7 +69,10 @@ body {
 }
 .navigationItem:hover {
 }
-
+.name {
+  font-size: 6rem;
+  font-weight: 900;
+}
 .navigationItem::after {
   content: '';
   width: 0%;
@@ -77,5 +89,15 @@ body {
 .containerInfo {
   grid-row: 2/4;
   grid-column: 4/5;
-  background-color: aqua;
+  color: azure;
+}
+.container__skills {
+  border: 1px solid white;
+}
+.vejica {
+  font-size: 4rem;
+}
+.containerInfo__HeaderOne {
+  font-size: 4rem;
+  font-weight: 100;
 }
