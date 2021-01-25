@@ -92,7 +92,6 @@ body {
   color: azure;
 }
 .container__skills {
-  border: 1px solid white;
 }
 .vejica {
   font-size: 4rem;
@@ -100,4 +99,7 @@ body {
 .containerInfo__HeaderOne {
   font-size: 4rem;
   font-weight: 100;
+}
+.AboutMeParagraph {
+  font-size: 2rem;
 }
