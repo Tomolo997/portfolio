@@ -26,7 +26,7 @@
 
 
 
-        <div class="containerInfo container__skills">
+        <div class="containerInfo container__skills ">
             <h1 class="containerInfo__HeaderOne">About me </h1>
             <br> 
 
@@ -39,8 +39,49 @@
             My current skills are in HTML, CSS, Vanilla Javascript, React, 
             SaaS, tailwindCSS, Bootstrap. 
         </div>
-        <div class="containerInfo container__Projects"></div>
+        <div class="containerInfo container__Projects active">
+            <h1 class="containerInfo__HeaderOne">Projects</h1>
+            <div class="projects__card project__electionMap">
+                <h1 class="projectTitle-h1">Election map 2020</h1>
+                <img src="img/electionMap_project.png" class="imgProject" alt="">
+                <div class="projectAbout">
+                    <p class="aboutText">Fill out the states so you can see who would win in the 2020 USA election.</p>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://electionelectoralmap2020.netlify.app/" class="linkToTheWebsite">
+                        <svg class="icon__project">
+                            <use xlink:href="img/sprite.svg#icon-link"></use>
+                          </svg>
+                    </a>
+                    <a href="https://github.com/Tomolo997/ElectionMap" class="linkToGithub"> <svg class="icon__project">
+                        <use xlink:href="img/sprite.svg#icon-github"></use>
+                      </svg></a>
+                </div>
+            </div>
+
+
+            <div class="projects__card project__dijkstra">
+                <h1 class="projectTitle-h1">Shortest path</h1>
+                <img src="img/dijkstraAlgo.png" class="imgProject_dijkstra" alt="">
+                <div class="projectAbout">
+                    <p class="aboutText">Dijkstra's algorithm. Set starting and endingn node in the grid and find the shortest path between the nodes</p>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://dijkstraalgoproject.netlify.app/" class="linkToTheWebsite">
+                        <svg class="icon__project">
+                            <use xlink:href="img/sprite.svg#icon-link"></use>
+                          </svg>
+                    </a>
+                    <a href="https://github.com/Tomolo997/Dijkstra-s" class="linkToGithub"> <svg class="icon__project">
+                        <use xlink:href="img/sprite.svg#icon-github"></use>
+                      </svg></a>
+                </div>
+            </div>
+
+            
+        </div>
         <div class="containerInfo container__contact"></div>
     </div>
 </body>
+<script src="app.js"></script>
 </html>
