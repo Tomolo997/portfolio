@@ -19,7 +19,7 @@ body {
   grid-template-columns:
     10rem minmax(20rem, 1fr) minmax(2rem, 7rem) minmax(20rem, 1fr)
     10rem;
-  grid-template-rows: 10rem 1fr 1fr 10rem;
+  grid-template-rows: 5rem 1fr 1fr 10rem;
   height: 100vh;
 }
 
@@ -91,6 +91,7 @@ body {
   grid-column: 4/5;
   color: azure;
   display: none;
+  animation: 1s all ease;
 }
 .container__skills {
 }
@@ -105,7 +106,28 @@ body {
   font-size: 2rem;
 }
 .active {
-  display: block;
+  display: grid !important;
+  position: relative;
+  animation: my-animation 0.7s ease;
+}
+.socialMedia {
+  font-size: 2rem;
+}
+@keyframes my-animation {
+  from {
+    opacity: 0;
+    top: -150px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.emailLink {
+  color: azure;
+  text-decoration: none;
+  border-bottom: 1px solid white;
 }
 
 .container__Projects {
@@ -115,10 +137,16 @@ body {
   grid-gap: 2rem;
 }
 .containerInfo__HeaderOne {
-  grid-row: 1/2;
-  grid-column: 1/2s;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
-.project__electionMap {
+.containerInfo__HeaderOne_projects {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font-size: 4rem;
+  font-weight: 100;
+}
+.active .project__electionMap {
   grid-row: 2/3;
   grid-column: 1/2;
 
@@ -157,7 +185,9 @@ body {
   margin-top: 1rem;
   width: 100%;
 }
-
+.containerInfo {
+  display: none;
+}
 .project__dijkstra {
   grid-row: 2/3;
   grid-column: 2/3;
@@ -192,4 +222,71 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.icon__project_SocialMedia {
+  width: 4rem;
+  height: 4rem;
+  fill: azure;
+}
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  position: relative;
+}
+.AboutMeheader1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+.linkedin {
+  fill: #0a66c2;
+  color: white;
+}
+.backgorund {
+  background-color: azure;
+  height: 3rem;
+  width: 2.5rem;
+  z-index: -20;
+  top: 0.3rem;
+  left: 5rem;
+  position: absolute;
+}
+.github {
+  fill: black;
+}
+.socialmediaLink_gitHub {
+  position: absolute;
+  top: 2rem;
+  right: 11rem;
+}
+.socialmediaLink::before {
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  background-color: azure;
+  top: 3.5rem;
+  left: 1rem;
+
+  position: relative;
+  z-index: -2;
+}
+.socialmediaLink_gitHub::before {
+  content: '';
+  width: 3.5rem;
+  height: 3.5rem;
+  display: block;
+  background-color: azure;
+  top: 4rem;
+  left: 0.2rem;
+  border-radius: 50%;
+  position: relative;
+  z-index: -2;
 }
