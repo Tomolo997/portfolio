@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Tomolo997/portfolio#readme",
   "devDependencies": {
     "sass": "^1.32.5"
+  },
+  "dependencies": {
+    "parcel": "^1.12.4"
   }
 }
