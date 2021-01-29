@@ -47,7 +47,23 @@ body {
 @media screen and (max-width: 37.5em) {
   .container {
     display: grid;
-    grid-template-columns: 10px 355px 10px;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 5rem 20rem 4rem 40rem min-content 50rem;
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 27.5em) {
+  .container {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 5rem 20rem 4rem 40rem min-content 50rem;
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 20em) {
+  .container {
+    display: grid;
+    grid-template-columns: 20px 280px 20px;
     grid-template-rows: 5rem 20rem 4rem 40rem min-content 50rem;
     height: 200vh;
   }
@@ -61,6 +77,13 @@ body {
   flex-direction: column;
   justify-content: space-around;
   position: relative;
+}
+@media screen and (max-width: 75em) {
+  .aboutMe {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-left: 2rem;
+  }
 }
 
 .aboutMe__heading {
@@ -332,6 +355,12 @@ body {
   .aboutText {
     font-size: 1rem;
     width: 20rem;
+  }
+}
+@media screen and (max-width: 20em) {
+  .aboutText {
+    font-size: 1rem;
+    width: 17rem;
   }
 }
 
