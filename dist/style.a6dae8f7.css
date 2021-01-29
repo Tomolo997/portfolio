@@ -44,6 +44,14 @@ body {
     height: 200vh;
   }
 }
+@media screen and (max-width: 37.5em) {
+  .container {
+    display: grid;
+    grid-template-columns: 10px 355px 10px;
+    grid-template-rows: 5rem 20rem 4rem 40rem min-content 50rem;
+    height: 200vh;
+  }
+}
 
 .aboutMe {
   grid-row: 2/3;
@@ -66,9 +74,24 @@ body {
   position: relative;
   left: -1rem;
 }
+@media screen and (max-width: 75em) {
+  .aboutMe__paragraph {
+    font-size: 1.62rem;
+  }
+}
 
 .hi__span {
   font-size: 7rem;
+}
+@media screen and (max-width: 75em) {
+  .hi__span {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .hi__span {
+    font-size: 3rem;
+  }
 }
 
 .navigation {
@@ -93,6 +116,11 @@ body {
   position: relative;
   left: 0.7rem;
 }
+@media screen and (max-width: 37.5em) {
+  .frontEnd {
+    font-size: 1rem;
+  }
+}
 
 .navigationItem {
   color: azure;
@@ -104,6 +132,21 @@ body {
 .name {
   font-size: 6rem;
   font-weight: 900;
+}
+@media screen and (max-width: 75em) {
+  .name {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 52em) {
+  .name {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .name {
+    font-size: 3rem;
+  }
 }
 
 .navigationItem::after {
@@ -138,14 +181,45 @@ body {
 .vejica {
   font-size: 4rem;
 }
+@media screen and (max-width: 37.5em) {
+  .vejica {
+    font-size: 2rem;
+  }
+}
 
 .containerInfo__HeaderOne {
   font-size: 4rem;
   font-weight: 100;
+  margin-top: 2rem;
 }
 
 .AboutMeParagraph {
   font-size: 2rem;
+}
+@media screen and (max-width: 75em) {
+  .AboutMeParagraph {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .AboutMeParagraph {
+    font-size: 1.3rem;
+  }
+}
+
+.AboutMeParagraph_Contact {
+  font-size: 2rem;
+}
+@media screen and (max-width: 75em) {
+  .AboutMeParagraph_Contact {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .AboutMeParagraph_Contact {
+    font-size: 1.5rem;
+    margin-top: -5rem;
+  }
 }
 
 .active {
@@ -254,6 +328,12 @@ body {
     width: 30rem;
   }
 }
+@media screen and (max-width: 37.5em) {
+  .aboutText {
+    font-size: 1rem;
+    width: 20rem;
+  }
+}
 
 .icon__project {
   width: 2rem;
@@ -264,6 +344,12 @@ body {
   .icon__project {
     width: 3rem;
     height: 3rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .icon__project {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
@@ -289,6 +375,9 @@ body {
   }
 }
 
+.container__contact {
+  position: relative;
+}
 @media screen and (max-width: 75em) {
   .container__contact {
     display: flex !important;
@@ -325,7 +414,7 @@ body {
 @media screen and (max-width: 75em) {
   .imgProject_dijk {
     min-width: 270px;
-    height: 270px;
+    min-height: 160px;
   }
 }
 
@@ -413,7 +502,7 @@ body {
   display: block;
   background-color: azure;
   top: 3.5rem;
-  left: 1rem;
+  left: 0.4rem;
   position: relative;
   z-index: -2;
 }

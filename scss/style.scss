@@ -38,6 +38,12 @@ body {
     grid-template-rows: 5rem 20rem 4rem 40rem min-content 50rem;
     height: 200vh;
   }
+  @media screen and (max-width: 37.5em) {
+    display: grid;
+    grid-template-columns: 10px 355px 10px;
+    grid-template-rows: 5rem 20rem 4rem 40rem min-content 50rem;
+    height: 200vh;
+  }
 }
 
 .aboutMe {
@@ -59,9 +65,18 @@ body {
   color: azure;
   position: relative;
   left: -1rem;
+  @media screen and (max-width: 75em) {
+    font-size: 1.62rem;
+  }
 }
 .hi__span {
   font-size: 7rem;
+  @media screen and (max-width: 75em) {
+    font-size: 5rem;
+  }
+  @media screen and (max-width: 37.5em) {
+    font-size: 3rem;
+  }
 }
 .navigation {
   grid-row: 3/4;
@@ -77,9 +92,13 @@ body {
     display: none;
   }
 }
+
 .frontEnd {
   position: relative;
   left: 0.7rem;
+  @media screen and (max-width: 37.5em) {
+    font-size: 1rem;
+  }
 }
 .navigationItem {
   color: azure;
@@ -92,6 +111,15 @@ body {
 .name {
   font-size: 6rem;
   font-weight: 900;
+  @media screen and (max-width: 75em) {
+    font-size: 6rem;
+  }
+  @media screen and (max-width: 52em) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 37.5em) {
+    font-size: 3rem;
+  }
 }
 .navigationItem::after {
   content: '';
@@ -121,13 +149,34 @@ body {
 }
 .vejica {
   font-size: 4rem;
+  @media screen and (max-width: 37.5em) {
+    font-size: 2rem;
+  }
 }
 .containerInfo__HeaderOne {
   font-size: 4rem;
   font-weight: 100;
+  margin-top: 2rem;
 }
 .AboutMeParagraph {
   font-size: 2rem;
+  @media screen and (max-width: 75em) {
+    font-size: 1.6rem;
+  }
+  @media screen and (max-width: 37.5em) {
+    font-size: 1.3rem;
+  }
+}
+
+.AboutMeParagraph_Contact {
+  font-size: 2rem;
+  @media screen and (max-width: 75em) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 37.5em) {
+    font-size: 1.5rem;
+    margin-top: -5rem;
+  }
 }
 .active {
   display: grid !important;
@@ -217,6 +266,10 @@ body {
     font-size: 2rem;
     width: 30rem;
   }
+  @media screen and (max-width: 37.5em) {
+    font-size: 1rem;
+    width: 20rem;
+  }
 }
 
 .icon__project {
@@ -226,6 +279,10 @@ body {
   @media screen and (max-width: 75em) {
     width: 3rem;
     height: 3rem;
+  }
+  @media screen and (max-width: 37.5em) {
+    width: 2rem;
+    height: 2rem;
   }
 }
 .projectLinks {
@@ -245,6 +302,7 @@ body {
   }
 }
 .container__contact {
+  position: relative;
   @media screen and (max-width: 75em) {
     display: flex !important;
     grid-row: 6/7;
@@ -275,7 +333,7 @@ body {
   margin-bottom: 1rem;
   @media screen and (max-width: 75em) {
     min-width: 270px;
-    height: 270px;
+    min-height: 160px;
   }
 }
 .project__earthquakes {
@@ -351,7 +409,7 @@ body {
   display: block;
   background-color: azure;
   top: 3.5rem;
-  left: 1rem;
+  left: 0.4rem;
 
   position: relative;
   z-index: -2;
